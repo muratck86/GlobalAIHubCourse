@@ -15,10 +15,12 @@ def is_prime(n):
     else:  # If the number is not greater then 2 return False
         return False
 
+
 # Wrapper function calls is_prime function for each of the numbers in range(n) and appends the numbers
 # with True result to a list and returns the list.
 def primes_to(n):
     return [x for x in range(n) if is_prime(x)]
+
 
 # print prime numbers less than 100
 print(primes_to(100))
